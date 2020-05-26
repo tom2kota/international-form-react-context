@@ -32,6 +32,27 @@ class App extends Component {
 
                     <div className="right menu">
 
+                        <h4 className="ui header">Inline</h4>
+                        <p>A dropdown can be formatted to appear inline in other content</p>
+                        <span>
+                          Show me posts by
+                          <div className="ui inline dropdown">
+                            <div className="text">
+                              <img className="ui avatar image" src="/images/avatar/small/jenny.jpg" alt="sss"/>
+                              Jenny Hess
+                            </div>
+                            <i className="dropdown icon"/>
+                            <div className="menu">
+                              <div className="item">
+                                <img className="ui avatar image" src="/images/avatar/small/jenny.jpg" alt="sddss"/>
+                                Jenny Hess
+                              </div>
+
+                            </div>
+                          </div>
+                        </span>
+
+
                         <div className="ui compact menu">
                             <div className="ui simple dropdown item">
                                 Select Language
@@ -49,7 +70,6 @@ class App extends Component {
                             </div>
                         </div>
 
-                        <div className="item"> Select a Language:</div>
                         <div className="item" onClick={() => this.onLanguageChange('English')}>
                             <i className="flag gb"/>
                         </div>
