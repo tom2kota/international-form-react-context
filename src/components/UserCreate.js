@@ -3,12 +3,10 @@ import Field from "./Field";
 import Button from "./Button";
 
 const UserCreate = () => (
-    <div className="ui raised teal inverted segment">
+    <div className="ui raised secondary segment">
         <div className="ui huge form">
-
-                <Field/>
-                <Button/>
-
+            <Field/>
+            <Button/>
         </div>
     </div>
 )
