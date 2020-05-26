@@ -30,27 +30,30 @@ class App extends Component {
                     </div>
                     <div className="right menu">
 
-                        <div className="ui right dropdown item">
-                            Select a Language:
+
+                        <div className="ui selection dropdown">
+                            <input type="hidden" name="language"/>
                             <i className="dropdown icon"/>
+                            <div className="default text">Language</div>
                             <div className="menu">
-                                <div className="item">
+                                <div className="item" data-value="1">
                                     English &nbsp;
                                     <i className="flag gb" onClick={() => this.onLanguageChange('English')}/>
                                 </div>
-                                <div className="item">
+                                <div className="item" data-value="0">
                                     Netherlandish &emsp;
                                     <i className="flag nl" onClick={() => this.onLanguageChange('Netherlandish')}/>
                                 </div>
                             </div>
                         </div>
 
+
                         <div className="item"> Select a Language:</div>
-                        <div className="item">
-                            <i className="flag gb" onClick={() => this.onLanguageChange('English')}/>
+                        <div className="item" onClick={() => this.onLanguageChange('English')}>
+                            <i className="flag gb"/>
                         </div>
-                        <div className="item">
-                            <i className="flag nl" onClick={() => this.onLanguageChange('Netherlandish')}/>
+                        <div className="item" onClick={() => this.onLanguageChange('Netherlandish')}>
+                            <i className="flag nl"/>
                         </div>
                     </div>
                 </div>
