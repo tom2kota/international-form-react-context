@@ -34,7 +34,7 @@ class App extends Component {
 
                         <div className="ui compact menu">
                             <div className="ui simple dropdown item">
-                                Select Language
+                                <div className="ui header blue">Select Language</div>
                                 <i className="dropdown icon"/>
                                 <div className="menu">
                                     <div className="item" data-value="1"
@@ -51,23 +51,6 @@ class App extends Component {
                             </div>
                         </div>
 
-                        <div className="ui compact selection dropdown">
-                            <i className="dropdown icon"/>
-                            <div className="text">Compact</div>
-                            <div className="menu">
-                                <div className="item" data-value="1"
-                                     onClick={() => this.onLanguageChange('English')}>
-                                    <i className="flag gb"/>
-                                    &nbsp; English
-                                </div>
-                                <div className="item" data-value="0"
-                                     onClick={() => this.onLanguageChange('Netherlandish')}>
-                                    <i className="flag nl"/>
-                                    &nbsp; Netherlandish
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 
                     <div className="item" onClick={() => this.onLanguageChange('English')}>
@@ -80,7 +63,7 @@ class App extends Component {
 
                 </div>
 
-                <ColorContext.Provider value="blue">
+                <ColorContext.Provider value="violet">
                     <LanguageContext.Provider value={this.state.language}>
                         <UserCreate/>
                     </LanguageContext.Provider>
