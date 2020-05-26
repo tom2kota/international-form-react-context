@@ -5,12 +5,12 @@ import ColorContext from "../contexts/ColorContext";
 class Button extends Component {
 
     renderSubmit(value) {
-        return (value === 'English') ? 'Submit' : 'Voorleggen'
+        return (value === 'English') ? 'SUBMIT' : 'VOORLEGGEN'
     }
 
     renderButton(color) {
         return (
-            <button className={`ui inverted button ${color}`}>
+            <button className={`ui inverted button huge ${color}`}>
                 <LanguageContext.Consumer>
                     {value => this.renderSubmit(value)}
                 </LanguageContext.Consumer>
