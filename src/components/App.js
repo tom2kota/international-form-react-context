@@ -37,12 +37,14 @@ class App extends Component {
                                 Select Language
                                 <i className="dropdown icon"/>
                                 <div className="menu">
-                                    <div className="item" data-value="1">
-                                        <i className="flag gb" onClick={() => this.onLanguageChange('English')}/>
+                                    <div className="item" data-value="1"
+                                         onClick={() => this.onLanguageChange('English')}>
+                                        <i className="flag gb"/>
                                         &nbsp; English
                                     </div>
-                                    <div className="item" data-value="0">
-                                        <i className="flag nl" onClick={() => this.onLanguageChange('Netherlandish')}/>
+                                    <div className="item" data-value="0"
+                                         onClick={() => this.onLanguageChange('Netherlandish')}>
+                                        <i className="flag nl"/>
                                         &nbsp; Netherlandish
                                     </div>
                                 </div>
@@ -50,16 +52,18 @@ class App extends Component {
                         </div>
 
                         <div className="ui compact menu">
-                            <div className="ui right dropdown item">
+                            <div className="ui simple right dropdown item">
                                 Select Language
                                 <i className="dropdown icon"/>
                                 <div className="menu">
-                                    <div className="item" data-value="1">
-                                        <i className="flag gb" onClick={() => this.onLanguageChange('English')}/>
+                                    <div className="item" data-value="1"
+                                         onClick={() => this.onLanguageChange('English')}>
+                                        <i className="flag gb"/>
                                         &nbsp; English
                                     </div>
-                                    <div className="item" data-value="0">
-                                        <i className="flag nl" onClick={() => this.onLanguageChange('Netherlandish')}/>
+                                    <div className="item" data-value="0"
+                                         onClick={() => this.onLanguageChange('Netherlandish')}>
+                                        <i className="flag nl"/>
                                         &nbsp; Netherlandish
                                     </div>
                                 </div>
