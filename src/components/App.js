@@ -35,7 +35,7 @@ class App extends Component {
                         <div className="ui compact menu">
                             <div className="ui simple dropdown item">
                                 <span className="ui header sub disabled">Select Language</span>
-                                <i className="dropdown icon"/>
+                                <i className="dropdown icon grey"/>
                                 <div className="menu">
                                     <div className="item" data-value="1"
                                          onClick={() => this.onLanguageChange('English')}>
