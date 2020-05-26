@@ -22,18 +22,36 @@ class App extends Component {
                             <a href="/">
                                 <i className="large icons">
                                     <i className="home icon"/>
-                                    <i className="inverted corner add icon"/>
+                                    <i className="corner blue world icon"/>
                                 </i>
                                 HOME
                             </a>
                         </h2>
                     </div>
-                    <div className="item"> Select a Language:</div>
-                    <div className="item">
-                        <i className="flag gb" onClick={() => this.onLanguageChange('English')}/>
-                    </div>
-                    <div className="item">
-                        <i className="flag nl" onClick={() => this.onLanguageChange('Netherlandish')}/>
+                    <div className="right menu">
+
+                        <div className="ui right dropdown item">
+                            Select a Language:
+                            <i className="dropdown icon"/>
+                            <div className="menu">
+                                <div className="item">
+                                    English &nbsp;
+                                    <i className="flag gb" onClick={() => this.onLanguageChange('English')}/>
+                                </div>
+                                <div className="item">
+                                    Netherlandish &emsp;
+                                    <i className="flag nl" onClick={() => this.onLanguageChange('Netherlandish')}/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="item"> Select a Language:</div>
+                        <div className="item">
+                            <i className="flag gb" onClick={() => this.onLanguageChange('English')}/>
+                        </div>
+                        <div className="item">
+                            <i className="flag nl" onClick={() => this.onLanguageChange('Netherlandish')}/>
+                        </div>
                     </div>
                 </div>
 
