@@ -9,24 +9,22 @@ class Field extends Component {
         const passwordText = (this.context === 'English') ? 'Password' : 'Wachtwoord'
 
         return (
-            <div className="ui form">
-                <div className="fields">
+            <div className="two fields">
 
-                    <div className="field">
-                        <div className="ui left icon input focus">
-                            <label>{usernameText}</label>
-                            <input type="text" placeholder={usernameText}/>
-                            <i className="user outline icon"/>
-                        </div>
+                <div className="field">
+                    <div className="ui left icon input focus">
+                        <input type="text" placeholder={usernameText}/>
+                        <i className="user outline icon"/>
                     </div>
+                </div>
 
-                    <div className="ui left icon input field">
-                        <label>{passwordText}</label>
-                        <input type="password" placeholder="Password"/>
+                <div className="field">
+                    <div className="ui left icon input">
+                        <input type="password" placeholder={passwordText}/>
                         <i className="lock icon"/>
                     </div>
-
                 </div>
+
             </div>
         )
     }
