@@ -28,6 +28,36 @@ class App extends Component {
                             </a>
                         </h2>
                     </div>
+
+                    <div className="ui compact menu">
+                        <div className="ui simple dropdown item">
+                            Dropdown
+                            <i className="dropdown icon"/>
+                            <div className="menu">
+                                <div className="item">Choice 1</div>
+                                <div className="item">Choice 2</div>
+                                <div className="item">Choice 3</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="ui floating dropdown labeled search icon button">
+                        <i className="world icon"></i>
+                        <span className="text">Select Language</span>
+                        <div className="menu">
+                            <div className="item">Arabic</div>
+                            <div className="item">Chinese</div>
+                            <div className="item">Danish</div>
+                            <div className="item">Dutch</div>
+                            <div className="item">English</div>
+                            <div className="item">French</div>
+                            <div className="item">German</div>
+                            <div className="item">Turkish</div>
+                            <div className="item">Vietnamese</div>
+                        </div>
+                    </div>
+
+
                     <div className="right menu">
 
 
