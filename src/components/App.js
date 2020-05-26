@@ -34,7 +34,7 @@ class App extends Component {
 
                         <div className="ui compact menu">
                             <div className="ui simple dropdown item">
-                                <div className="ui header blue">Select Language</div>
+                                <span className="ui header sub disabled">Select Language</span>
                                 <i className="dropdown icon"/>
                                 <div className="menu">
                                     <div className="item" data-value="1"
