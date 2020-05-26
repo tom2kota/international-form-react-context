@@ -10,7 +10,7 @@ class Button extends Component {
 
     renderButton(color) {
         return (
-            <button className={`ui inverted button huge ${color}`}>
+            <button className={`ui inverted basic button huge ${color}`}>
                 <LanguageContext.Consumer>
                     {value => this.renderSubmit(value)}
                 </LanguageContext.Consumer>
