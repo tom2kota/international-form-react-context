@@ -32,39 +32,35 @@ class App extends Component {
 
                     <div className="right menu">
 
-                        <h4 className="ui header">Inline</h4>
-                        <p>A dropdown can be formatted to appear inline in other content</p>
-                        <span>
-                          Show me posts by
-                          <div className="ui inline dropdown">
-                            <div className="text">
-                              <img className="ui avatar image" src="/images/avatar/small/jenny.jpg" alt="sss"/>
-                              Jenny Hess
-                            </div>
-                            <i className="dropdown icon"/>
-                            <div className="menu">
-                              <div className="item">
-                                <img className="ui avatar image" src="/images/avatar/small/jenny.jpg" alt="sddss"/>
-                                Jenny Hess
-                              </div>
-
-                            </div>
-                          </div>
-                        </span>
-
-
                         <div className="ui compact menu">
                             <div className="ui simple dropdown item">
                                 Select Language
                                 <i className="dropdown icon"/>
                                 <div className="menu">
                                     <div className="item" data-value="1">
-                                        English &nbsp;
                                         <i className="flag gb" onClick={() => this.onLanguageChange('English')}/>
+                                        &nbsp; English
                                     </div>
                                     <div className="item" data-value="0">
-                                        Netherlandish &emsp;
                                         <i className="flag nl" onClick={() => this.onLanguageChange('Netherlandish')}/>
+                                        &nbsp; Netherlandish
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="ui compact menu">
+                            <div className="ui right dropdown item">
+                                Select Language
+                                <i className="dropdown icon"/>
+                                <div className="menu">
+                                    <div className="item" data-value="1">
+                                        <i className="flag gb" onClick={() => this.onLanguageChange('English')}/>
+                                        &nbsp; English
+                                    </div>
+                                    <div className="item" data-value="0">
+                                        <i className="flag nl" onClick={() => this.onLanguageChange('Netherlandish')}/>
+                                        &nbsp; Netherlandish
                                     </div>
                                 </div>
                             </div>
