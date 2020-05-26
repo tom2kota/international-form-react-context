@@ -14,14 +14,14 @@ class Field extends Component {
                 <div className="field">
                     <div className="ui left icon input focus">
                         <input type="text" placeholder={usernameText}/>
-                        <i className="user outline icon"/>
+                        <i className="user blue icon"/>
                     </div>
                 </div>
 
                 <div className="field">
                     <div className="ui left icon input">
                         <input type="password" placeholder={passwordText}/>
-                        <i className="lock icon"/>
+                        <i className="lock blue icon"/>
                     </div>
                 </div>
 
